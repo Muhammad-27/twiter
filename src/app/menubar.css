@@ -1,0 +1,179 @@
+.main.container {
+    display: grid;
+    grid-template-columns: 275px 1fr 350px;
+    /* Sidebar, Main, Right side */
+    gap: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.menu-section {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #eff3f4;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+.twitericon {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-grow: 1;
+    /* Pastdagi profilni pastga surish uchun */
+}
+
+.menu a {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 19px;
+    font-weight: 600;
+    color: #0f1419;
+    text-decoration: none;
+    padding: 12px 15px;
+    border-radius: 30px;
+    transition: 0.2s;
+}
+
+.menu a:hover {
+    background-color: #e7e7e8;
+}
+
+.menu button {
+    background-color: #1d9bf0;
+    color: white;
+    border: none;
+    width: 90%;
+    padding: 15px;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: 700;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* Sidebar Profil qismi */
+.menu-section .might_profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-top: auto;
+    /* Har doim eng pastda turadi */
+}
+
+.menu-section .might_profile:hover {
+    background-color: #e7e7e8;
+}
+
+/* O'ng ustun umumiy */
+.main section:last-child {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Search qismi */
+.search {
+    display: flex;
+    align-items: center;
+    background-color: #eff3f4;
+    padding: 10px 15px;
+    border-radius: 30px;
+    gap: 10px;
+    position: sticky;
+    top: 5px;
+    z-index: 5;
+}
+
+.search input {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 15px;
+}
+
+/* Trends va You might like bloklari */
+.trends,
+.might {
+    background-color: #f7f9f9;
+    border-radius: 16px;
+    overflow: hidden;
+    padding: 15px 0;
+}
+
+.trends_text,
+.might h1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px 10px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.trends_germaniy,
+.might_profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.trends_germaniy:hover,
+.might_profile:hover {
+    background-color: #eff3f4;
+}
+
+.revol p {
+    color: #536471;
+    font-size: 13px;
+}
+
+.revol h3 {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 2px 0;
+}
+
+.show {
+    display: block;
+    padding: 15px;
+    color: #1d9bf0;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+/* Follow tugmasi */
+.might_profile button {
+    background-color: #0f1419;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* Footer qismi */
+.foter {
+    padding: 15px;
+    color: #536471;
+    font-size: 13px;
+    line-height: 18px;
+}
